@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 240, 219);
+    font-size: medium;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media(min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 2.5rem;
+    }
+}
+
+
+
+.topic {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Mobile: stack topic content and make star blocks full-width */
+@media (max-width: 600px) {
+    .topic {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .topic>div:first-child {
+        width: 100%;
+    }
+
+    /* Make all divs inside .topic stack vertically on mobile */
+    .topic {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        width: 100%;
+    }
+
+    .stars {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    /* .star1,
+    .star2,
+    .star3 {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .star1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
+
+
+
+.star1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: smaller;
+    background-color: rgb(238, 233, 233);
+    gap: 5px;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: 170px;
+    margin-left: 100px;
+    width: 300px;
+}
+
+.star2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: smaller;
+    background-color: rgb(238, 233, 233);
+    gap: 5px;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: 170px;
+    width: 300px;
+}
+
+.star3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: smaller;
+    background-color: rgb(238, 233, 233);
+    gap: 5px;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: 210px;
+    width: 300px;
+}
+
+
+@media(min-width: 468px) {
+
+    .card_image img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    h1,
+    p,
+    h6 {
+        color: rgb(88, 34, 81);
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    @media(min-width: 768px) {
+        .cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    .card {
+        padding: 1.5rem;
+        background-color: rgb(88, 34, 81);
+        border-radius: 10px;
+        flex: 1;
+        min-width: 100%;
+
+    }
+
+
+    @media(min-width: 668px) {
+        .card {
+            min-width: 260px;
+        }
+    }
+
+    .card p,
+    .card h4 {
+        color: azure;
+    }
+
+    .card_image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (mini-width:760) {
+    .star1 {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+    }
+
+}
+
+
+.card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+h6 {
+    margin: 4px;
+    font-size: 0.8rem;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+h5 {
+    color: rgb(241, 55, 241);
+}
+
+
+@media (max-width: 768px) {
+    .topic {
+        flex-direction: column;
+    }
+
+    .stars {
+        width: 100%;
+    }
+
+    .star1,
+    .star2,
+    .star3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        margin: 0 0 15px 0;
+        padding: 15px;
+    }
+
+    .star {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .rate1,
+    .rate2,
+    .rate3 {
+        text-align: center;
+        width: 100%;
+    }
+}
