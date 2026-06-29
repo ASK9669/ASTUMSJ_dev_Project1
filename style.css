@@ -37,8 +37,7 @@ h6 {
 
 .topic {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-between;~
     gap: 3rem;
     margin-bottom: 3rem;
 }
@@ -119,7 +118,6 @@ h6 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 .card h4,
@@ -167,11 +165,6 @@ h6 {
     .cards {
         flex-direction: column;
     }
-
-    .card:nth-child(2),
-    .card:nth-child(3) {
-        margin-top: 0;
-    }
 }
 
 /* Mobile */
@@ -185,27 +178,8 @@ h6 {
         text-align: center;
         padding: 15px;
     }
-    .rate1,
-    .rate2,
-    .rate3 {
+    .rate{
         text-align: center;
         width: 100%;
     }
-}
-
-/*
-   Desktop
-*/
-
-@media (min-width: 768px) {
-
-    body {
-        padding: 2rem;
-    }
-
-    .container {
-        padding: 2.5rem;
-    }
-
-
 }
